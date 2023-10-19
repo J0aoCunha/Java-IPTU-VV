@@ -18,7 +18,6 @@ public class Main {
         double multa = municipio.calcularMulta(imovel1);
 
         // Exibe informações sobre o imóvel e a multa.
-        System.out.println("O munícipe " + imovel1.getNome() + " do estado " + municipio.getEstado() + " tem o imposto de R$" + imovel1.getImposto() + " com " + imovel1.getMesesAtraso() + " meses de atraso!!");
-        System.out.println("O valor da multa é: R$" + municipio.impostoTotal);
+        InOut.MsgDeInformacao("Notificação de Cobrança","O munícipe " + imovel1.getNome() + " do estado " + municipio.getEstado() + " tem o imposto de R$" + imovel1.getImposto() + " com " + imovel1.getMesesAtraso() + " meses de atraso!! \n \n  O valor da multa é: R$" + municipio.impostoTotal);
     }
 }
